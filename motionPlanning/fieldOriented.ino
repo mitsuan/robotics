@@ -10,22 +10,29 @@
 #define BUFF_SIZE 40
  char buff[BUFF_SIZE];
 
+//Trasnformation matrix 
 float m[4][3]={{-0.35,0.35,0.25},{-0.35,-0.35,0.25},{0.35,-0.35,0.25},{0.35,0.35,0.25}};
 double x=0,y=0;
+
+//motor pins
 int frp=11,flp=12,brp=9,blp=8;//pwm pins
 int frd=47,fld=49,brd=43,bld=41;//direction pins
+
 double sp=100;//speed
 double k,s,s1,s2,s3,s4;
 double y1=0.7,y2=1.5,w=0;
 int yaw;
 int scale_factor=200;
 bool D1,D2,D3,D4;
+
+//PS4
 USB Usb;
 PS4USB PS4(&Usb);
 
-bool printAngle, printTouch;
-uint8_t oldL2Value, oldR2Value;
+//reference orientaion angle, initialised in the setup().
 float refYaw=0;
+
+
 void setup() {
   Serial.begin(115200);
 #if !defined(__MIPSEL__)
@@ -85,13 +92,17 @@ void loop()
     if (PS4.getAnalogHat(RightHatX) > 197 || PS4.getAnalogHat(RightHatX) < 57 || PS4.getAnalogHat(RightHatY) > 197 || PS4.getAnalogHat(RightHatY) < 57) 
   
     {
+      // Converting the values of 'x' and 'y' recieved from PS4: (0 to 255) to (-128 to 127)
       x=PS4.getAnalogHat(RightHatX)-128;
       y=PS4.getAnalogHat(RightHatY)-128;
       y=-y;
+     
       Serial.print(F("\tY: "));
       Serial.print(y);
       Serial.print(F("\tX: "));
       Serial.print(x);
+     
+     //The angle w.r.t field in which the robot is desired to move
       float theta_f=atan2(y,x);
       float yaw_imu=getYawValue();
       float yawdiff=refYaw-yaw_imu;
