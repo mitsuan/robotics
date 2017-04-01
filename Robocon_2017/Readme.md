@@ -4,6 +4,7 @@ https://www.roboconindia.com/rule%20book%202017.pdf
 Mechanical design:
 1. <Solidworks file>
 2.Motion
+
     -We had used an 'X' design for the base to implement 4 wheeled omnidirectional drive called the 'Killough drive'.
     -Wheels used were 100mm double aluminium omni wheels.
     
