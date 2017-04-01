@@ -1,14 +1,16 @@
-The problem statement of robocon 2017 was:
+# The problem statement of robocon 2017 was:
 https://www.roboconindia.com/rule%20book%202017.pdf
 
-Mechanical design:
-1. <Solidworks file>
-2.Motion
+## Mechanical design:
+### 1. CAD design : 
+    <Solidworks file>
+
+### 2.Motions
 
     -We had used an 'X' design for the base to implement 4 wheeled omnidirectional drive called the 'Killough drive'.
     -Wheels used were 100mm double aluminium omni wheels.
     
-3.Throwing Platform
+### 3.Throwing Platform
 
     The design of the throwing platform was the most critical part in the robot manufacturing process as this decided the     initial parameters governing the aerodynamics of the frisbee during its flight.
     
@@ -46,9 +48,9 @@ Mechanical design:
       
       
 -----------------------------------------------------------------------------------------------------------------------------
-Electronics:
+## Electronics:
 
-I. Motherboard:
+### I. Motherboard:
       -Two motherboards were used, one for master controller and the other as a slave controller 
 
 
@@ -80,7 +82,7 @@ I. Motherboard:
 
             The communication between the two boards was done through I2C using the 'Wire' library of Arduino.
 
-II. Motor driver circuits
+### II. Motor driver circuits
     
       7 Motor driver circuits from cytron were used.
       -Specs:
