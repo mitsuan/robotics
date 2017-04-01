@@ -11,27 +11,35 @@ Mechanical design:
 
     The design of the throwing platform was the most critical part in the robot manufacturing process as this decided the     initial parameters governing the aerodynamics of the frisbee during its flight.
     
+    Reference papers for study of aerodynamics of frisbee flight:
+    i.  http://scripts.mit.edu/~womens-ult/frisbee_physics.pdf
+    ii. http://digitalcommons.csbsju.edu/cgi/viewcontent.cgi?article=1067&context=honors_theses
+    
     From the study of the aerodynamics of the frisbee flight it was concluded that the parameters upon which the frisbee's flight depended were:
     -> initial launch angle
     -> initial velocity
     -> initial angular velocity
       
     a.Linear actuators
-      -> These were responsible for controlling the first parameter viz 
+      -> These were responsible for controlling the first parameter viz initial launch angle of the frisbee
       -> Two linear actuators were used to control the pitch and roll angle of the platform
+            -One was fitted at the middle of front side edge of the platform to control the pitch angle of the platform
+            -Other was fitted at the middle of left side edge of the platform to control the roll angle of the platform  
       
     b.Driving Wheel
       -> This wheel was used to impart linear velocity and angular velocity to the frisbee
 
-    - Control wheel
-      -> This wheel was added at a later stage.
-      -> 
+    c.Control wheel
+      -> According to the requirement we need to control the initial velocity and angular velocity of the frisbee independently but the driving wheel alone couldn't control these 2 parameters independently.
+      -> Therfore, the control wheel was added.
+      -> This wheel was placed such that the path of the frisbee was in between the driving wheel and the controlling wheel.
+      -> Such a placement enabled us to impart two impulsive tangential forces to the frisbee at two ends of its diameter and conrol linear momentum and angular momentum of the frisbee independently.
     
-    -Stack holder
+    d.Stack holder
       ->Used for holding the frisbees.
       ->Had a capacity of holding 20 frisbees at a time.
       
-    - Pneumatic cylinder
+    e.Pneumatic cylinder
         -> This was used for launching the frisbees.
         -> It pushed each frisbee out of the stack to get into the contact of the driving wheel.
       
@@ -73,7 +81,7 @@ I. Motherboard:
 
 II. Motor driver circuits
     
-      -7 Motor driver circuits from cytron were used.
+      7 Motor driver circuits from cytron were used.
       -Specs:
             -> 30 amp DC motor driver x 5
                 4 were used for motion control of the base
