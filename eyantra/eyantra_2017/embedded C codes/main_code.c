@@ -2,8 +2,8 @@
 
 /****************************************************************************************************
 Team Id:          eYRC-CC#2755
-Author List:      Sumit Kumar Pradhan, Ronak Bansal, Tamanna Singhal, Brujesh Agrawal
-Filename:         C_code.c
+Author List:      Sumit Kumar Pradhan, Ronak Bansal.
+Filename:         main_code.c
 Theme:            Cross_A_Crater
 Functions:        void port_init(),
 					void timer5_init(),
