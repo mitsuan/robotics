@@ -7,32 +7,38 @@
       -Mechanical design
       
       And, prepare multiple autonomous soccer playing robots for the Robocup Small Sized League.
-      
+
+------------------------------------------------------------------------------------------------------------------------
+
 # Mechanical
     
-## Motion
+  ## Motion
         The base of the robot has been prepared for a kiwi drive holonomic motion i.e a three wheeled robot.
         
-## Wheels:
+  ## Wheels:
             The wheels used are 100mm plastic omni wheels.
         
-## Motors:
+  ## Motors:
             Three Faulhaber Coreless 17W Encoder Motor 120RPM are used to drive the robot.
+
+------------------------------------------------------------------------------------------------------------------------
 
 # Electronics
   
-## Microcontroller:
+  ## Microcontroller:
           Arduino UNO is being used as the microcontroller board to control the robot.
       
-## Communication
+  ## Communication
           Xbee is used for wireless communication between the robot and PC.
       
-## Motor Drivers
+  ## Motor Drivers
           3 x Cytron 13 amp DC motor drivers are used to control the three motors coupled to the wheels of the robot.
           
-## Camera
+  ## Camera
           Intex IT-306WC is used as an overhead camera to take the complete view of the field of motion of the robot
-          
+
+------------------------------------------------------------------------------------------------------------------------
+
 # Programming
 
     The complete robot control is done in the following steps:
@@ -45,15 +51,15 @@
         -Image Processing
         -Robot control
         
-      ## Image processing
+ ## Image processing
           
-          ### Platform
+   ### Platform
               We are using OpenCV libraries in Python.
               
-          ### Algorithm
+   ### Algorithm
               <to be explained>
               
-       ## Robot control
+ ## Robot control
            The MCU on the robot receives the data packet about the motion from the PC through the xbee.
            The data consists of three parameters:
             -x : The required speed in x direction
