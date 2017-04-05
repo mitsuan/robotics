@@ -61,9 +61,11 @@
               
  ## Robot control
            The MCU on the robot receives the data packet about the motion from the PC through the xbee.
+           
            The data consists of three parameters:
-            -x : The required speed in x direction
-            -y : The required speed in x direction
-            -w : The required angular speed along z-axis
-            Using the above three parameters and the inverse kinematics matrix, the speed (PWM) and direction of each motor is calculated and the motors are conrolled accordingly.
+           -x : The required speed in x direction
+           -y : The required speed in x direction
+           -w : The required angular speed along z-axis
+           
+           Using the above three parameters and the inverse kinematics matrix, the speed (PWM) and direction of each motor is calculated and the motors are conrolled accordingly.
              
