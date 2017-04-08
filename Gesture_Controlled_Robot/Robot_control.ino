@@ -2,6 +2,8 @@
 Receive Acelerometer data from phone over Bluetooth.
 Process the data and accordingly drive the motors to get the desired motion
   
+source help:
+http://www.instructables.com/id/Use-your-android-phone-sensors-on-the-arduino-/
 */
  
 #include <MeetAndroid.h>
