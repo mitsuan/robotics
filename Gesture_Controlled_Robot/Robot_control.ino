@@ -55,8 +55,32 @@ void loop()
 void accelerometer(byte flag, byte numOfValues)
 {
   // we use getInt(), since we know only data between 0 and 360 will be sent
-  int imuData []= meetAndroid.getInt(); 
+  float imuData []= meetAndroid.getInt(); 
   
+  meetAndroid.getFloatValues(imuData);
+  
+
+  for (int i=0; i<3;i++)
+  {
+    meetAndroid.send(imuData[i]);//Used for debug purposes
+  }
+
+  if(imudata[0]>3)
+  {
+    turn_right(50+imuData[0]*(20));
+  }
+  else if(imudata[0]<-3)
+  {
+    turn_left(50-imuData[0]*(20));
+  }
+  else if(imudata[1]>3)
+  {
+    move_forward(50+imuData[1]*(20));
+  }
+  else if(imudata[1]<-3)
+  {
+    move_backward(50-imuData[1]*(20));
+  }
   
   
   
