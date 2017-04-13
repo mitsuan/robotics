@@ -1,3 +1,4 @@
+#include <EEPROM.h>
 #include <Ethernet.h>
 #include<SPI.h>
 
@@ -6,6 +7,10 @@ byte mac[] = {0x00, 0xAA, 0xBB, 0xCC, 0xDE, 0x02};
 EthernetServer server = EthernetServer(12358);
 IPAddress ip(192, 168, 0, 102);
 //IPAddress ip(192, 168,100,200);
+
+//Actuator for lock
+byte lock=0;
+
 
 int endGet=0;
 
@@ -59,7 +64,17 @@ if(client) {
          
         }
        
-       
+      String uid=getReq.substring(getReq.indexOf("uid")+4,getReq.indexOf("&"));
+      String pass=getReq.substring(getReq.indexOf("pass")+5,getReq.lastIndexOf(" "));
+    
+      if(search(uid,pass))
+      {
+              
+      }
+    else
+    {
+    }
+           
        
       
   }
@@ -77,6 +92,16 @@ Serial.println("Client is disconnected");
 }
 
 delay(2000); // Wait for 2 seconds before starting to listen again
+}
+
+void search(String uid,String pass)
+{
+  for(int i=0;i<EEPROM.length();i+=15)
+  {
+    
+    
+  }
+  
 }
 
 
