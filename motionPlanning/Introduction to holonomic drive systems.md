@@ -4,3 +4,4 @@ Section I:
 Mathematical relation between speed and direction of wheels and the resultant motion of the robot in terms of x,y,w.
 
 We consider a four wheeled system called the "Killough drive" for the explanation:
+ 
