@@ -14,17 +14,18 @@
     The robot was an autonomous one which uses the wind energy delivered by the Hybrid robot to drive itself and uses its own power source to control the steering using a servo motor to follow the white line in the arena.
     
     ### Microcontroller
-        We had used Arduino Mega for controlling the Eco robot.
+       We had used Arduino Mega for controlling the Eco robot.
    
     ### Sensors
-      ->LSA08 (Cytron)
+      ->LSA08 (Cytron):
            This line following sensor was used to sense the white line and send the data to the microcontroller to control the servo motor in order to steer the robot's motion.
            
     ### Actuators
-      -> Metal geared servo 
-          It was connected to the frame on which the front wheels were mounted. 
+      -> Metal geared servo :
+      It was connected to the frame on which the front wheels were mounted. 
            
    ### Programming
+   
     The robot was programmed using a PID control loop. The position of white line was sensed using the lsa08 sensor and the error was determined. This error was fed to the the digital PID algorithm whose output was used to control the servo to keep the sensor centered with the white line.
       
     Another algorithm was used to store the last 10 values of the sensor in order to determine the position of the robot if the sensor gets off the white line. 
