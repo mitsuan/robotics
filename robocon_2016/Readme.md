@@ -28,11 +28,11 @@
    
    The robot was programmed using a PID control loop. The position of white line was sensed using the lsa08 sensor and the error was determined. This error was fed to the the digital PID algorithm whose output was used to control the servo to keep the sensor centered with the white line.
       
-    Another algorithm was used to store the last 10 values of the sensor in order to determine the position of the robot if the sensor gets off the white line. 
+   Another algorithm was used to store the last 10 values of the sensor in order to determine the position of the robot if the sensor gets off the white line. 
       
-    The track on the arena had a zig-zag path (river) to be crossed. Many a times the robot got off the track at the turns and wasn't able to get back to the track. The above algorithm was useful in this case to determine the direction in which the robot should turn to get back to the track.
+   The track on the arena had a zig-zag path (river) to be crossed. Many a times the robot got off the track at the turns and wasn't able to get back to the track. The above algorithm was useful in this case to determine the direction in which the robot should turn to get back to the track.
       
-    There was a junction after crossing the first part (hill) of the arena. We had to take a right turn for the left side arena and left turn for the right side arena, at this junction. We had used a toggle switch on the board which was toggled according to the arena assigned during gameplay. The lsa08 sensor had a feature called the 'Junction Pulse' which give a active high signal when a particular number of sensors (can be set in the sensor module) are high, which helps to detect a junction without explicitly writing a code for the same.
+   There was a junction after crossing the first part (hill) of the arena. We had to take a right turn for the left side arena and left turn for the right side arena, at this junction. We had used a toggle switch on the board which was toggled according to the arena assigned during gameplay. The lsa08 sensor had a feature called the 'Junction Pulse' which give a active high signal when a particular number of sensors (can be set in the sensor module) are high, which helps to detect a junction without explicitly writing a code for the same.
       
    
  
