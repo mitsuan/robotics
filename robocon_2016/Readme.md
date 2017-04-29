@@ -4,10 +4,10 @@
       http://www.roboconindia.com/rulebook%202016.pdf
       
  ## Description of Robot:
-    According to the problem statement we had to design two robots - Hybrid robot and Eco robot. Here a brief explanation of the Eco robot has been provided.
+     According to the problem statement we had to design two robots - Hybrid robot and Eco robot. Here a brief explanation of the Eco robot has been provided.
      
    ### Eco Robot 
-     This robot was to be designed with no driving power. The only power it had was used to run the microcontroller and steer the robot's motion. The energy for driving this robot was transferred through the Hybrid robot using a 'Clean Energy' (wind energy, electromagnetic energy, gravitational energy). Our design had a flap at the back of the Eco robot used to push the robot using the wind energy delivered by the Hybrid robot using an EDF.
+       This robot was to be designed with no driving power. The only power it had was used to run the microcontroller and steer the robot's motion. The energy for driving this robot was transferred through the Hybrid robot using a 'Clean Energy' (wind energy, electromagnetic energy, gravitational energy). Our design had a flap at the back of the Eco robot used to push the robot using the wind energy delivered by the Hybrid robot using an EDF.
     
     
  ## Control of the robot
