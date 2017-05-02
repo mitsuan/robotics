@@ -1,13 +1,13 @@
 # Intro
    
    This project has been started to enable proper research in the field of:
-    + Motion planning and odometry of omnidrive robots
-    + Image Processing and Computer Vision
-    + Artificial Intelligence
-    + Electronics circuit design
-    + Mechanical design
+   +  Motion planning and odometry of omnidrive robots 
+   + Image Processing and Computer Vision 
+   + Artificial Intelligence 
+   + Electronics circuit design 
+   + Mechanical design 
       
-      And, prepare multiple autonomous soccer playing robots for the Robocup Small Sized League.
+And, prepare multiple autonomous soccer playing robots for the Robocup Small Sized League.
 
 
 # Working model of 1st prototype: 
@@ -65,12 +65,13 @@ https://drive.google.com/file/d/0B7AcDGyuUegYVWpWdWh5Y0dlZXM/view?usp=sharing
               <to be explained>
               
  ## Robot control
-           The MCU on the robot receives the data packet about the motion from the PC through the xbee.
            
-           The data consists of three parameters:
-           -x : The required speed in x direction
-           -y : The required speed in x direction
-           -w : The required angular speed along z-axis
+   The MCU on the robot receives the data packet about the motion from the PC through the xbee.
+           
+   The data consists of three parameters:
+   + x : The required speed in x direction
+   + y : The required speed in x direction
+   + w : The required angular speed along z-axis
            
            Using the above three parameters and the inverse kinematics matrix, the speed (PWM) and direction of each motor is calculated and the motors are conrolled accordingly.
              
