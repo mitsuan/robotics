@@ -1,12 +1,17 @@
 # Intro
-    This project has been started to enable proper research in the field of:
-      -Motion planning and odometry of omnidrive robots
-      -Image Processing and Computer Vision
-      -Artificial Intelligence
-      -Electronics circuit design
-      -Mechanical design
+   
+   This project has been started to enable proper research in the field of:
+    + Motion planning and odometry of omnidrive robots
+    + Image Processing and Computer Vision
+    + Artificial Intelligence
+    + Electronics circuit design
+    + Mechanical design
       
       And, prepare multiple autonomous soccer playing robots for the Robocup Small Sized League.
+
+
+# Working model of 1st prototype: 
+https://drive.google.com/file/d/0B7AcDGyuUegYVWpWdWh5Y0dlZXM/view?usp=sharing
 
 ------------------------------------------------------------------------------------------------------------------------
 
