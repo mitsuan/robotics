@@ -73,5 +73,5 @@ https://drive.google.com/file/d/0B7AcDGyuUegYVWpWdWh5Y0dlZXM/view?usp=sharing
    + y : The required speed in x direction
    + w : The required angular speed along z-axis
            
-           Using the above three parameters and the inverse kinematics matrix, the speed (PWM) and direction of each motor is calculated and the motors are conrolled accordingly.
+   Using the above three parameters and the inverse kinematics matrix, the speed (PWM) and direction of each motor is calculated and the motors are conrolled accordingly.
              
