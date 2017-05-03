@@ -13,6 +13,28 @@ And, prepare multiple autonomous soccer playing robots for the Robocup Small Siz
 # Working model of 1st prototype: 
 https://drive.google.com/file/d/0B7AcDGyuUegYVWpWdWh5Y0dlZXM/view?usp=sharing
 
+   ## Explanation:
+   In the video the robot is trying to reach the ball and stop at a particular distance from the ball. It also maintains it orientation such that the its front(marked by green) is always towards the ball.
+   
+   An overhead camera is used to monitor the area below and the video is captured for processing on a PC usnig Python and OpenCV. The green and red spots on the robot is used to track the position of the robot and determine its orientation w.r.t a reference axes. The green spot marks the front of the robot. The position of the ball is also determined w.r.t the reference axes.
+   
+   For calculating the motion parameters two parameters are detemined : 
+   + Distance of robot's center from the ball's center.
+   + The angle between line joining robot's center and ball and line joining the center of two marks on the robot.
+    
+Two PID controllers are used:
+   + to control the speed according to the distanc between the robot and ball and 
+   + to minimise the angle between line joining robot's center and ball and line joining the center of two marks on the robot
+   
+As we are using variable speed in different direections for a kiwi drive holonomic motion, we have calculated the locus of the velocity cone to determine the maximum speed in all directions.
+
+Finally three values are calculated: 
+   + the translational speed of the robot (v)
+   + The rotational speed of the robot (w)
+   + the direction of motion. (Ø)
+   
+The arduino board on the robot receives these three values and accordingly drives the motors for the required motion.
+
 ------------------------------------------------------------------------------------------------------------------------
 
 # Mechanical
@@ -46,15 +68,15 @@ https://drive.google.com/file/d/0B7AcDGyuUegYVWpWdWh5Y0dlZXM/view?usp=sharing
 
 # Programming
 
-    The complete robot control is done in the following steps:
-      -Capture video from camera through PC
-      -Use image processing and algorithms to extract required information from video frames
-      -Send the data to MCU on robot through Xbee
-      -Command the robot to move and orient in the desired way
+The complete robot control is done in the following steps:
+   + Capture video from camera through PC
+   + Use image processing and algorithms to extract required information from video frames
+   + Send the data to MCU on robot through Xbee
+   + Command the robot to move and orient in the desired way
       
-      The complete processing can be categorised into two:
-        -Image Processing
-        -Robot control
+The complete processing can be categorised into two:
+   + Image Processing
+   + Robot control
         
  ## Image processing
           
