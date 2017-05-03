@@ -30,8 +30,8 @@ As we are using variable speed in different direections for a kiwi drive holonom
 
 Finally three values are calculated: 
    + the translational speed of the robot (v)
-   + The rotational speed of the robot (w)
-   + the direction of motion. (Ø)
+   + the rotational speed of the robot (w)
+   + the direction of motion. (Ø)
    
 The arduino board on the robot receives these three values and accordingly drives the motors for the required motion.
 
